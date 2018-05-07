@@ -10,7 +10,7 @@ int main(void){
   xr=x0;
   r=1.2;
   K=100.0;
-  dt=0.1;
+  dt=0.01;
 
   FILE *fp;
   fp=fopen("3-7.dat","w");
