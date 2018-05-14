@@ -6,12 +6,12 @@ int main(void){
   FILE *fp;
   fp=fopen("output_4-10s.csv","w");
 
-  a=3.0;
-  b=2.0;
-  c=5.0;
-  d=4.0;
-  e=3.0;
-  f=90.0;
+  a=10.5;
+  b=1.5;
+  c=3.0;
+  d=3.0;
+  e=20.0;
+  f=2.0;
 
   A=(-a*b*f-b*c*d)/(b*f-c*e);
   B=(a*c*f+c*c*d)/(b*f-c*e);
