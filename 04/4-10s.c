@@ -11,7 +11,7 @@ int main(void){
   c=3.0;
   d=3.0;
   e=20.0;
-  f=2.0;
+  f=20.0;
 
   A=(-a*b*f-b*c*d)/(b*f-c*e);
   B=(a*c*f+c*c*d)/(b*f-c*e);
