@@ -6,14 +6,14 @@
 int main(void){
   int a[N],aa[N],i,t,r1,r2,r,k,p;
   srand(time(NULL));
-  k=5;
+  k=40;
   p=k/N;
 
   for(i=0; i<k; i++){
     a[i]=0;
   }
 
-  for(i=k+1; i<N; i++){
+  for(i=k; i<N; i++){
     a[i]=1;
   }
 
@@ -34,6 +34,7 @@ int main(void){
       if(r==1){
         aa[i]=a[r2];
       }
+    }
 
     for(i=0; i<N; i++){
       a[i]=aa[i];
@@ -41,10 +42,9 @@ int main(void){
       if(p==1){
         break;
       }
-    }
+}
     printf("\n");
   }
 
   return 0;
-}
 }
