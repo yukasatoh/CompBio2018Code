@@ -4,13 +4,9 @@
 # define N 50
 
 int main(void){
-  int a[N],aa[N],i,t,r1,r2,r,k,p,K,T,S,Y;
+  int a[N],aa[N],i,t,r1,r2,r,k,p,K;
   srand(time(NULL));
   k=40;
-  S=0;
-  Y=0;
-
-for(T=0; T<2000; T++){
 
   for(i=0; i<k; i++){
     a[i]=0;//変異の子
@@ -21,7 +17,9 @@ for(T=0; T<2000; T++){
   }
 
   for(i=0; i<N; i++){
+    printf("%d",a[i]);
   }
+  printf("\n");
 
   for(t=0; t<100; t++){
     for(i=0; i<N; i++){
@@ -39,6 +37,7 @@ for(T=0; T<2000; T++){
 
     for(i=0; i<N; i++){
       a[i]=aa[i];
+      printf("%d",a[i]);
     }
 
 K=0;
@@ -49,20 +48,13 @@ for(i=0; i<N; i++){
    }
 
 p=K/N;
+printf("\n");
 
 if(p==1){
-    S=S+1;
-    Y=Y+(t+2);
+  printf("%d\n",t+2);
     break;
   }
-}
-
-      if(S==100){
-        printf("%d\n",Y/100);
-        break;
-}
 
 }
-
   return 0;
 }
