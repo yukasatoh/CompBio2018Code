@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(void){
-  int S, SS, I, II, R,RR,i;
-  double b,r,dt,t;
+  int i;
+  double S, SS, I, II, R,RR,b,r,dt,t;
 
   FILE *fp;
   fp=fopen("output_6-5.csv","w");
@@ -13,11 +13,11 @@ int main(void){
   S=100;
   R=30;
   I=20;
-  b=3.00;
-  r=2.00;
+  b=0.002;
+  r=0.10;
 
-  fprintf(fp,"%f,%d,%d,%d\n",t,S,I,R);
-  for(i=1; i<=1000;i++){
+  fprintf(fp,"%f,%f,%f,%f\n",t,S,I,R);
+  for(i=1; i<=10000; i++){
     t=dt*i;
     SS=S+dt*(-b*S*I);
     RR=R+dt*(b*S*I-r*I);
@@ -27,7 +27,7 @@ int main(void){
     I=II;
 
     if(i%100==0){
-      fprintf(fp,"%f,%d,%d,%d\n",t,S,I,R);
+      fprintf(fp,"%f,%f,%f,%f\n",t,S,I,R);
     }
   }
 
