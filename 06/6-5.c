@@ -20,8 +20,8 @@ int main(void){
   for(i=1; i<=10000; i++){
     t=dt*i;
     SS=S+dt*(-b*S*I);
-    RR=R+dt*(b*S*I-r*I);
-    II=I+dt*(r*I);
+    RR=I+dt*(r*I);
+    II=R+dt*(b*S*I-r*I);
     S=SS;
     R=RR;
     I=II;
