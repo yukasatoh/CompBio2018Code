@@ -18,7 +18,7 @@ int main(void){
     y1=sqrt(-2*log(x1))*cos(2*M_PI*x2);
     y2=sqrt(-2*log(x1))*sin(2*M_PI*x2);
 
-    fprintf(fp,"%f,%f\n%f,%f\n",x1,y1,x2,y2);
+    fprintf(fp,"%f,%f\n",x1,y1);
   }
 
   fclose(fp);
