@@ -16,6 +16,9 @@ int main(void){
     tempcell[i]=0;
   }
 
+  fp=fopen("CGLinput.csv","r");
+  sscanf
+
   //初期条件
   cell[50]=1;
   for(i=0; i<100; i++){
